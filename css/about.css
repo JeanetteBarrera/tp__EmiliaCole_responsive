@@ -1,0 +1,158 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: open sans;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:#000000;
+}
+.about header {
+    position: fixed;
+    z-index: 1;
+    height: 50px;
+    background: #ffffff;
+    text-align: center;
+    width: 100%;
+}
+.about .menu {
+    font-size: 18px;
+}
+.about .menu li {
+    display:inline-block;
+    padding: 5px 5px 0px 5px;
+}
+.about .menu li a {
+    color:#616161;
+}
+.about .redes li {
+    display: inline;
+}
+.about main {
+    padding-top: 50px ;
+}
+.about main .banner-mobile {
+    position: relative;
+}
+.about main .banner-mobile img {
+    width: 100vw;
+    height: 50vh;
+}
+.about main .banner-mobile h1 {
+    position: absolute;
+    top: 60px;
+    left:10px;
+    font-size: 20px;
+    font-family: Raleway;
+}
+.about main .contenido {
+    margin-bottom: 30px;
+}
+.about main .contenido h1 {
+    display:none;
+}
+.about main .contenido h3{
+    color: #86c2b6;
+    padding: 20px 5px;
+    font-size: 16px;
+}
+.about main .contenido p {
+    color: #86c2b6;
+    padding: 10px 5px;
+    font-size: 14px;
+}
+
+/* RESPONSIVE DESING----TABLETS PORTRAIT*/
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1023px){
+    .about header {
+        height: 65px;
+    }
+    .about .menu {
+        font-size: 25px;
+        font-weight: 50px;
+    }
+    .about .menu li {
+        display:inline-block;
+        padding: 10px 30px 0px 50px;
+    }
+    .about .redes {
+        text-align: right;
+    }
+    .about main {
+        padding-top: 65px;
+    }
+    .about main .banner-mobile h1 {
+        top: 200px;
+        left:25px;
+        font-size: 40px;
+    }
+    .about main .contenido h3 {
+        padding: 30px 10px;
+        font-size: 25px;
+    }
+    .about main .contenido p {
+        padding: 10px 10px;
+        font-size: 18px;
+    }
+}
+/* RESPONSIVE DESING----TABLETS LANDSCAPE----LAPTOPS MIN-WIDHT 1024*/
+@media only screen and (min-device-width : 1024px) and (max-device-width : 1400px) 
+and (orientation : landscape){
+    .about {
+        background-image: url("../img/emilia-about.jpg");
+        background-size: 70% 100%;
+        background-position: right top;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+    .about header {
+        text-align: right;
+        background-color: rgba(255,255,255,0.5);
+        margin-top: 20px;
+    }  
+    .about .menu {
+        font-size: 25px;
+        font-weight: 50px; 
+    }
+    .about .menu li{
+        padding-top:10px
+    }
+    .about .menu li a{
+        border-left: solid 1px #616161;
+        padding: 0px 10px 0px 10px;
+    }
+    .about main .banner-mobile {
+        display: none;
+    }
+    .about main {
+        position: relative;
+        height: 100vh;
+        width: 45vw;
+    }
+    .about main .contenido {
+        position: absolute;
+        top:25vh;
+        left:0.8vw;
+    }
+    .about main .contenido h1 {
+        display:block;
+        font-size: 48px;
+        font-weight: 700;
+        font-family: Raleway; 
+    }
+    .about main .contenido h3 {
+        font-size:25px ;
+        padding: 20px 0px 20px 50px;
+        margin-top:30px;
+    }
+    .about main .contenido p {
+        padding:10px 0px 10px 50px;
+        font-size: 18px ;
+    }
+}
+/* ME FALTA PARA PANTALLAS MAS GRANDES Y REVISAR MEJOR EL CODIGO*/

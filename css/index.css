@@ -1,0 +1,172 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+    font-family: Open Sans;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+li{
+    list-style: none;
+}
+.home {
+    background-image: url("../img/emilia-home.jpg");
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+}
+/* HEADER CABEZERA*/
+.home header {
+    position: relative;
+}
+.home header h2 {
+    font-family: Work Sans;
+    float: right;
+    padding-right: 5px;
+    padding-top: 30px;
+    font-size: 25px;
+}
+.home .nav_mobile .ul_menu {
+    float: left;
+    font-size: 20px;
+    line-height: 40px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.home .nav_mobile .ul_menu li a { 
+    color: #616161;
+}
+.home .nav_mobile .ul_redes {
+    clear:both;
+    float:left;
+    padding-left: 10px;
+}
+.home .nav_mobile .ul_redes li {
+    display:inline;
+}
+
+/* MAIN CONTENIDO */ 
+.home main h2 {
+    display:none;
+}
+.home main h1 {
+    font-family: Raleway;
+    width: 100%;
+    font-size: 29px;
+    font-weight: 700;
+    position:absolute;
+    bottom: 30px;
+    padding-left: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+  /*desde aca esta es la que es posta y funciona ----------*/
+
+/* VERSION PARA TABLET (porta-retrato)*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1023px) 
+and (orientation : portrait) {
+    .home header h2 {
+        padding-right: 15px;
+        font-size: 50px;
+    }
+    .home main h1{
+        font-size: 70px;
+    }
+    .home .nav_mobile .ul_menu {
+        font-size: 30px;
+        line-height: 60px;
+    }
+}
+/*VERSION PARA TABLET Y LAPTOPS (ancho desde 1024px) Y (orientacion horizontal)*/
+@media only screen and (min-device-width : 1024px) and (max-device-width : 1200px) 
+and (orientation : landscape) { 
+    
+    .home {
+        background-size: 70% 102%;
+        background-position: right top;
+        background-repeat: no-repeat;
+    }
+    /* HEADER CABEZERA*/
+    .home header h2 {
+        display: none;
+    }
+    .home .nav_mobile .ul_menu {
+        font-size: 20px;
+        line-height: 40px;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+    .home .nav_mobile .ul_redes {
+        padding-left: 20px;
+    }
+    /* MAIN CONTENIDO */ 
+    .home main h2 {
+        display: block;
+        position: absolute;
+        /*top: 300px;*/
+        top:40vh;
+        left: 20px;
+        font-size: 40px;
+    }
+    .home main h1 {
+        font-size: 57px;
+        padding-left: 10px;
+        right: 5px;
+    }
+}
+/* VERSION PARA PANTALLAS MAS GRANDES  (ancho desde 1200px)*/
+@media only screen and (min-device-width : 1200px) {
+    .home {
+        background-size: 73% 102%;
+        background-position: right top;
+        background-repeat: no-repeat;
+    }
+    /* HEADER CABEZERA*/
+    .home header h2 {
+        display: none;
+    }
+    .home .nav_mobile .ul_menu {
+        font-size: 20px;
+        line-height: 40px;
+        padding-left: 30px;
+        padding-top: 20px;
+    }
+    .home .nav_mobile .ul_menu li a:hover { 
+        /*background-color: #616161;*/
+        border-radius: 5px;
+        margin-left: 10px;
+        font-weight: 700;
+        /*color:#ffffff;*/
+    }
+    .home .nav_mobile .ul_redes {
+        padding-left: 20px;
+    }
+    /* MAIN CONTENIDO */ 
+    .home main h2 {
+        display: block;
+        position: absolute;
+        /*top: 250px;*/
+        top:40vh;
+        left: 30px;
+        font-size: 40px;
+        font-weight: 400;
+    }
+    .home main h1 {
+        font-size: 75px;
+        padding-left: 10px;
+        right: 5px;
+    }
+
+}
+
+
+
+
+
+
+
+
