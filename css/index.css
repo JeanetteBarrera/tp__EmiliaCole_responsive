@@ -47,6 +47,8 @@ li{
 }
 .home .nav_mobile .ul_redes li {
     display:inline;
+    padding: 0 3px;
+    font-size: 1.2rem;
 }
 
 /* MAIN CONTENIDO */ 
@@ -56,11 +58,12 @@ li{
 .home main h1 {
     font-family: Raleway;
     width: 100%;
-    font-size: 29px;
+    font-size: 36px;
+    line-height: 50px;
     font-weight: 700;
     position:absolute;
-    bottom: 30px;
-    padding-left: 5px;
+    text-align: center;
+    bottom: 2rem;
     background-color: rgba(255, 255, 255, 0.5);
 }
 
@@ -75,10 +78,16 @@ and (orientation : portrait) {
     }
     .home main h1{
         font-size: 70px;
+        line-height: 80px;
     }
-    .home .nav_mobile .ul_menu {
+    .home .nav_mobile .ul_menu,
+    .home .nav_mobile .ul_redes{
         font-size: 30px;
         line-height: 60px;
+        margin-left: 2rem;
+    }
+    .home .nav_mobile .ul_redes li {
+        font-size: 1.8rem;
     }
 }
 /*VERSION PARA TABLET Y LAPTOPS (ancho desde 1024px) Y (orientacion horizontal)*/
@@ -113,9 +122,10 @@ and (orientation : landscape) {
         font-size: 40px;
     }
     .home main h1 {
-        font-size: 57px;
-        padding-left: 10px;
-        right: 5px;
+        font-size: 65px;
+        line-height: 85px;
+        padding-left: 20px;
+        text-align: left;
     }
 }
 /* VERSION PARA PANTALLAS MAS GRANDES  (ancho desde 1200px)*/
@@ -143,7 +153,7 @@ and (orientation : landscape) {
         /*color:#ffffff;*/
     }
     .home .nav_mobile .ul_redes {
-        padding-left: 20px;
+        padding-left: 30px;
     }
     /* MAIN CONTENIDO */ 
     .home main h2 {
@@ -153,12 +163,14 @@ and (orientation : landscape) {
         top:40vh;
         left: 30px;
         font-size: 40px;
-        font-weight: 400;
+        font-weight: 700;
     }
     .home main h1 {
         font-size: 75px;
-        padding-left: 10px;
-        right: 5px;
+        line-height: 100px;
+        padding-left: 30px;
+        bottom: 4rem;
+        text-align: left;
     }
 
 }

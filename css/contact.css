@@ -18,24 +18,30 @@ a {
 }
 
 .contact {
-    width: 100%;
-    max-width: 480px;
-    padding: 0 10px;
-    margin: 15px 0 30px 0;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 .contact header {
     width: 100%;
+    margin-top: 40px;
+    background-color: #ffffff;
     height: 50px;
     /*background-color: #86c2b6;*/
 }
 .contact header nav {
-    text-align: center;
+    text-align: right;
 
 }
 .contact header .nav-menu li {
     list-style: none;
     display: inline;
-    padding: 10px 8px;
+    padding: 0 10px;
+    border-left: solid 1px silver;
+}
+.contact .nav-redes {
+    display: block;
+    margin: 1rem 10px 0 0 ;
 }
 .contact main h1, h3{
     text-transform: uppercase;
@@ -61,17 +67,17 @@ a {
 
 /*RESPONSIVE PARA TABLETS--PORTRAIT */ 
 @media only screen and (min-device-width : 768px) {
-    .contact {
-        width: 100%;
-        max-width: 1023px;
-        padding: 0 20px;
-    }
     .contact header {
-        height: 70px;
-        font-size: 22px;
+        margin-top: 40px;
+        background-color: #ffffff;
+        height: 120px;
     }
     .contact header .nav-menu li {
-        padding: 10px 25px;
+        padding: 0 10px;
+        border-left: solid 1px silver;
+    }
+    .contact .nav-redes {
+        margin: 1rem 10px 0 0 ;
     }
     .contact main h1, h3 {
         margin: 30px 0;
@@ -84,23 +90,17 @@ a {
 /*RESPONSIVE TABLET--LANDSCAPE Y LAPTOPS/COMPUTADORAS desde 1024px y MENORES A 1280px*/
 @media only screen and (min-device-width : 1024px) and (max-device-width : 1280px) 
 and (orientation : landscape) {
-    .contact {
-        max-width: 1280px;
-    }
     .contact header {
         margin-top: 40px;
         background-color: #ffffff;
         height: 120px;
-    }
-    .contact header nav {
-        text-align: right;
     }
     .contact header .nav-menu li {
         padding: 0 10px;
         border-left: solid 1px silver;
     }
     .contact .nav-redes {
-        padding:30px 10px;
+        margin: 1rem 10px 0 0 ;
     }
     .contact main h1 {
         margin: 60px 0;
@@ -109,9 +109,6 @@ and (orientation : landscape) {
 }
 /*RESPONSIVE PANTALLAS GRANDES DESDE 1280px*/
 @media only screen and (min-device-width : 1280px) {
-    .contact {
-        max-width: 1440px;
-    }
     .contact header {
         margin-top: 40px;
         background-color: #ffffff;
@@ -123,9 +120,6 @@ and (orientation : landscape) {
     .contact header .nav-menu li {
         padding: 0 10px;
         border-left: solid 1px silver;
-    }
-    .contact .nav-redes {
-        padding:40px 10px;
     }
     .contact main h1 {
         margin: 65px 0;

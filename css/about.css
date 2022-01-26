@@ -11,26 +11,31 @@ a{
     text-decoration: none;
     color:#000000;
 }
+.about {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 .about header {
-    position: fixed;
-    z-index: 1;
-    height: 50px;
-    background: #ffffff;
-    text-align: center;
     width: 100%;
+    margin-top: 40px;
+    background-color: #ffffff;
+    height: 50px;
+    /*background-color: #86c2b6;*/
 }
-.about .menu {
-    font-size: 18px;
+.about header nav {
+    text-align: right;
+
 }
-.about .menu li {
-    display:inline-block;
-    padding: 5px 5px 0px 5px;
-}
-.about .menu li a {
-    color:#616161;
-}
-.about .redes li {
+.about header .nav-menu li {
+    list-style: none;
     display: inline;
+    padding: 0 10px;
+    border-left: solid 1px silver;
+}
+.about header .nav-redes {
+    display: block;
+    margin-right: 10px;
 }
 .about main {
     padding-top: 50px ;
@@ -39,8 +44,9 @@ a{
     position: relative;
 }
 .about main .banner-mobile img {
-    width: 100vw;
-    height: 50vh;
+    width: 100%;
+    height: 58vh;
+    object-fit: cover;
 }
 .about main .banner-mobile h1 {
     position: absolute;
@@ -69,19 +75,12 @@ a{
 /* RESPONSIVE DESING----TABLETS PORTRAIT*/
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1023px){
-    .about header {
-        height: 65px;
+    .music header {
+        height: 70px;
+        font-size: 22px;
     }
-    .about .menu {
-        font-size: 25px;
-        font-weight: 50px;
-    }
-    .about .menu li {
-        display:inline-block;
-        padding: 10px 30px 0px 50px;
-    }
-    .about .redes {
-        text-align: right;
+    .music header .nav-redes {
+        margin-top: 1rem;
     }
     .about main {
         padding-top: 65px;
@@ -90,6 +89,9 @@ a{
         top: 200px;
         left:25px;
         font-size: 40px;
+    }
+    .about main .banner-mobile img {
+        height: 80vh;
     }
     .about main .contenido h3 {
         padding: 30px 10px;
